@@ -1,11 +1,12 @@
 #!/bin/bash
 
 function usage {
-  echo "$@ <file-with-urls> [<#concurrency>]"
+  echo "$0 <file-with-urls> [<#concurrency>]"
 }
 
 if [[ -z $1 ]]; then
   echo "you must provide a file with urls."
+  usage
   exit 1
 fi
 
